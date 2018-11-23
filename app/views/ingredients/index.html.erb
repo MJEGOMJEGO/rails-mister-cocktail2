@@ -1,0 +1,12 @@
+<h1>All ingredients !!</h1>
+
+<p><%= link_to "Create a new ingredient for this cocktail", new_cocktail_ingredient_path,  class: "btn btn-warning" %></p>
+
+<ul>
+<% @ingredients.each do |ingredient| %>
+  <li><%= ingredient.content  %> => <%= ingredient.rating%></li>
+
+  <% end %>
+</ul>
+
+<%= link_to "back to list", cocktails_path,  class: "btn btn-primary" %>

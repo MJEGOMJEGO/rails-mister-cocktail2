@@ -1,0 +1,8 @@
+<h1>cocktail's ingredients</h1>
+<ul>
+<% @cocktail.ingredients.each do |review| %>
+<li><%= review.content %></li>
+<li><%= review.rating %></li>
+</ul>
+
+<p><%= link_to "Back to all cocktails", cocktails_path , class: 'btn btn-success' %></p>
